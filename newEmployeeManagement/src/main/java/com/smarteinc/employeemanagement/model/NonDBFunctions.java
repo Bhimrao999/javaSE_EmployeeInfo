@@ -4,7 +4,7 @@ package com.smarteinc.employeemanagement.model;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class NonDFunctions {
+public class NonDBFunctions {
 
 
     List<Employee1> employeeList = new ArrayList<Employee1>();

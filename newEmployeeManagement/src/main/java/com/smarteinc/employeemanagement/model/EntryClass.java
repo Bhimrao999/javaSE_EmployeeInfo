@@ -12,7 +12,7 @@ public class EntryClass {
             System.out.println("\n\n-------Employee Management Syatem ------------");
             System.out.println("  1. Create Department");
             System.out.println("  2. Create Employee");
-            System.out.println("  3. Create Employee");
+            System.out.println("  3. Non DB functions");
             System.out.println("  4. Exit the program...\n");
             System.out.println("Choose one:");
             choice = sc.nextInt();
@@ -32,7 +32,7 @@ public class EntryClass {
                     break;
                 case 3:
                     System.out.println("");
-                    NonDFunctions nb = new NonDFunctions();
+                    NonDBFunctions nb = new NonDBFunctions();
                     nb.getemployee();
                     break;
                 case 4:
