@@ -79,7 +79,7 @@ public class NonDBFunctions {
                     String currentCity = sc.next();
 
                     Map<String, List<Employee1>> employeeListByDepartment1 =
-                            employeeList.stream().filter(e -> e.getCity().equalsIgnoreCase(currentCity) && e.getCTC() > 200000 && e.getCTC() < 500000).collect(Collectors.groupingBy(Employee1::getDepartment));
+                            employeeList.parallelStream().filter(e -> e.getCity().equalsIgnoreCase(currentCity) && e.getCTC() > 200000 && e.getCTC() < 500000).collect(Collectors.groupingBy(Employee1::getDepartment));
 
                     Set<Map.Entry<String, List<Employee1>>> entrySet11 = employeeListByDepartment1.entrySet();
 
